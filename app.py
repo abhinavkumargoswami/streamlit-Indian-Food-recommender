@@ -65,7 +65,7 @@ import plotly.express as px
 
  
 fig = px.pie(values=result_chart.value_counts(), names=result_chart.value_counts().index)
-col1.header("Flavour Profile")
+
 
 col2.plotly_chart(fig, use_container_width=True)
 fig2 = fig = px.bar(x=result_chart1.value_counts(),y=result_chart1.value_counts().index)
