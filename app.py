@@ -56,7 +56,7 @@ result_chart0 = df[df.name.isin(result.values)]
 result_chart = result_chart0["flavor_profile"]
 result_chart1 = result_chart0["diet"]
 
-col1, col2 = st.beta_columns(2)
+col1, col2 = st.columns(2)
 col1.header("List of recommendations")
 
 col1.write(result_table)
